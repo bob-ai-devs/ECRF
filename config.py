@@ -108,7 +108,7 @@ def get_gemini_key():
     except:
         return None
 
-GEMINI_MODEL = "gemini-2.5-pro"
+GEMINI_MODEL = "gemini-flash-lite-latest"
 
 # ==================================================
 # SYNTHETIC DATA SETTINGS
@@ -148,6 +148,6 @@ VALIDATION_FREQUENCY = "Quarterly"
 
 MONITORING_FREQUENCY = "Monthly"
 
-GEMINI_API_KEY = "AIzaSyCAIWGff4AT9aJw_dIw9mGAh5vuWWBy5C4"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 GEMINI_MODEL = "gemini-flash-lite-latest"
